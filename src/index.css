@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-title: 'Montserrat', sans-serif;
+  --font-logo: 'Philosopher', serif;
+
+  --color-primary: #ffffff;
+  /* blanco */
+  --color-primary-t: #ffffff1c;
+  /* blanco transparente */
+  --color-secondary: #000000;
+  /* negro */
+  --color-secondary-t: #0000001c;
+  /* negro transparente */
+  --color-special: #2DE1F0;
+  /* color especial */
+}
+
+.philosopher-regular {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.philosopher-bold {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+p,
+span,
+a,
+li {
+  font-family: var(--font-text);
+}
+
+.logo {
+  font-family: var(--font-logo);
+}
