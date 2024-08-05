@@ -162,6 +162,20 @@
 /* Responsive Styles */
 
 @media (max-width: 850px) {
+    .presentacion {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .presentacion-texto {
+        width: 60%;
+    }
+
+    .presentacion img {
+        width: 20%;
+        margin-bottom: -50px;
+    }
+
     .container-dg {
         flex-direction: column;
         gap: 10px;
@@ -196,5 +210,15 @@
 
     .container-web .glass {
         transform: rotate(calc(var(--r) * 0deg));
+    }
+}
+
+@media (max-width: 600px) {
+    .presentacion img {
+        margin-bottom: -55px;
+    }
+
+    .presentacion img {
+        width: 40%;
     }
 }

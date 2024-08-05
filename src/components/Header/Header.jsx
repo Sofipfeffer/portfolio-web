@@ -9,7 +9,9 @@ const Header = () => {
     return (
         <header className="header">
             <div className="left">
-                <img src="../public/Foto-saludo.png" alt="Logo" />
+                <Link to="/">
+                    <img src="../public/Foto-saludo.png" alt="Logo" />
+                </Link>
                 <span>¡Hola! {nombre}</span>
             </div>
             {/* <nav className="center">

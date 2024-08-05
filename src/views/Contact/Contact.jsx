@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <Layout>
             <section className="contact">
-                <h2>{nombre} ¿En qué te puedo ayudar?</h2>
+                <h2>¿En qué puedo ayudarte {nombre}?</h2>
                 <form action="https://formsubmit.co/idealo.dg@gmail.com" method="post">
                     <div>
                         <label for="name"> Nombre
