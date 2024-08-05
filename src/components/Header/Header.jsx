@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../context/UserContext.jsx';
 import './Header.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Header = () => {
     const { nombre } = useContext(UserContext);
@@ -11,16 +12,18 @@ const Header = () => {
                 <img src="../public/Foto-saludo.png" alt="Logo" />
                 <span>¡Hola! {nombre}</span>
             </div>
-            <nav className="center">
+            {/* <nav className="center">
                 <a href="#sobre-mi">Sobre Mí</a>
                 <a href="#diseno">Diseño</a>
                 <a href="#programacion">Programación</a>
-            </nav>
+            </nav> */}
             <div className="right">
-                <button onClick={() => window.location.href = '#contacto'}>Contacto</button>
-                <button onClick={() => { /* Funcionalidad para cambiar modo */ }}>
+                <Link to="/contact">
+                    <button>Heblemos</button>
+                </Link>
+                {/* <button onClick={() => {} >
                     Modo Oscuro/Claro
-                </button>
+                </button> */}
             </div>
         </header>
     );

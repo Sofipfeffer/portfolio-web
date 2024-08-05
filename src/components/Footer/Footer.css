@@ -11,11 +11,13 @@ footer {
 footer .nombre h1 {
     font-family: var(--font-logo);
     font-weight: 400;
+    font-size: 2rem;
 }
 
 footer .nombre span {
     font-family: var(--font-logo);
     font-weight: 700;
+    font-size: 2rem;
 }
 
 .wrapper {
@@ -23,6 +25,7 @@ footer .nombre span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    font-size: 2rem;
 }
 
 .icon {
@@ -43,7 +46,7 @@ footer .nombre span {
 }
 
 .icon>i {
-    color: #2dd4bf;
+    color: var(--color-special);
     font-size: 1.5rem;
     transition: all 0.2s;
 }
@@ -90,4 +93,34 @@ footer .nombre span {
 
 .icon:has(.fa-github) {
     --color: #333;
+}
+
+@media (max-width: 850px) {
+    footer {
+        padding: 10px 40px;
+    }
+
+    footer .nombre h1 {
+        font-size: 1rem;
+    }
+
+    footer .nombre span {
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .icon {
+        text-decoration: none;
+        width: 1.625rem;
+        height: 1.625rem;
+        border-radius: 5px;
+    }
+
+    .icon>i {
+        font-size: 0.8rem;
+    }
 }

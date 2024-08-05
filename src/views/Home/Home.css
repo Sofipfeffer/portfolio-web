@@ -117,7 +117,6 @@
     bottom: 0;
     height: 100px;
     z-index: 0;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
 }
 
 .proyectos-web,
@@ -142,18 +141,14 @@
 
 .container-web .glass {
     position: relative;
-    width: 180px;
+    width: 200px;
     height: 200px;
-    background: linear-gradient(#fff2, transparent);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
     border-radius: 10px;
     margin: 0 -45px;
-    backdrop-filter: blur(10px);
     transform: rotate(calc(var(--r) * 1deg));
 }
 
@@ -163,18 +158,6 @@
     margin: 0 10px;
 }
 
-.container-web .glass::before {
-    content: attr(data-text);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
 
 /* Responsive Styles */
 
@@ -188,12 +171,12 @@
 
     .card {
         flex-grow: 0;
-        height: 1000px;
+        height: 30%;
         transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1), height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .card:hover {
-        height: 8000px;
+        height: 400%;
     }
 
     .card>.card-content {
@@ -204,5 +187,14 @@
 
     .card:hover>.card-content {
         inset: 5px;
+    }
+
+    .container-web {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-web .glass {
+        transform: rotate(calc(var(--r) * 0deg));
     }
 }
