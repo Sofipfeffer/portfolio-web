@@ -21,7 +21,7 @@ const Home = () => {
         <Layout>
             <section className="presentacion">
 
-                <img src="/public/inicio.png" alt="" />
+                <img src="/Inicio.png" alt="" />
 
                 <div className="presentacion-texto">
                     <h1>¡HOLA! Soy Sofia Pfefferkorn</h1>
@@ -52,13 +52,13 @@ const Home = () => {
                 <h1>Diseño y Código: Proyectos Web</h1>
                 <div className="container-web">
                     <div data-text="" style={{ '--r': -15 }} className="glass">
-                        <img src="/public/Web-1.png" alt="Idealo" height="1em" />
+                        <img src="/Web-1.png" alt="Idealo" height="1em" />
                     </div>
                     <div data-text="" style={{ '--r': 5 }} className="glass">
-                        <img src="/public/Web-2.png" alt="Harry potter" height="1em" />
+                        <img src="/Web-2.png" alt="Harry potter" height="1em" />
                     </div>
                     <div data-text="" style={{ '--r': 25 }} className="glass">
-                        <img src="/public/Web-3.png" alt="CTPPM" height="1em" />
+                        <img src="/Web-3.png" alt="CTPPM" height="1em" />
                     </div>
                 </div>
             </section>
