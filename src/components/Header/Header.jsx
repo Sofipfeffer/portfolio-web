@@ -10,7 +10,7 @@ const Header = () => {
         <header className="header">
             <div className="left">
                 <Link to="/">
-                    <img src="../public/Foto-saludo.png" alt="Logo" />
+                    <img src="/Foto-saludo.png" alt="Logo" />
                 </Link>
                 <span>¡Hola! {nombre}</span>
             </div>

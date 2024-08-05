@@ -52,13 +52,19 @@ const Home = () => {
                 <h1>Diseño y Código: Proyectos Web</h1>
                 <div className="container-web">
                     <div data-text="" style={{ '--r': -15 }} className="glass">
-                        <img src="/Web-1.png" alt="Idealo" height="1em" />
+                        <a href="https://portfolio-ut-2024.vercel.app" target="blank">
+                            <img src="/Web-1.png" alt="Idealo" height="1em" />
+                        </a>
                     </div>
                     <div data-text="" style={{ '--r': 5 }} className="glass">
-                        <img src="/Web-2.png" alt="Harry potter" height="1em" />
+                        <a href="https://tp2-utn-2024.vercel.app" target="blank">
+                            <img src="/Web-2.png" alt="Harry potter" height="1em" />
+                        </a>
                     </div>
                     <div data-text="" style={{ '--r': 25 }} className="glass">
-                        <img src="/Web-3.png" alt="CTPPM" height="1em" />
+                        <a href="http://www.traductoresmza.org/" target="blank">
+                            <img src="/Web-3.png" alt="CTPPM" height="1em" />
+                        </a>
                     </div>
                 </div>
             </section>
