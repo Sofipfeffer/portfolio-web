@@ -51,3 +51,18 @@ li {
 .logo {
   font-family: var(--font-logo);
 }
+
+/* Estilos globales */
+.app {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.light {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.app.dark {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
